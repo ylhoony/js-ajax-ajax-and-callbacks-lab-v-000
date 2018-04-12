@@ -19,9 +19,15 @@
     </style>
   </head>
   <body>
+    <form onsubmit="searchRepositories(); return false;">
+      Search Term: <input type="text" id="searchTerms">
+      <input type="submit">
+    </form>
+
     <main id="main">
       <div id="errors"></div>
     </main>
+
     <div class="flexbox-container">
       <div>
         <h3>Repositories</h3>
@@ -32,7 +38,9 @@
         <div id="details"></div>
       </div>
     </div>
+    
     <script src="jquery-3.1.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
