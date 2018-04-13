@@ -2,7 +2,8 @@ function searchRepositories() {
   const searchTerms = $("#searchTerms").val();
 
   $.ajax({
-    url: `https://api.github.com/search/repositories?q=${searchTerms}`
+    url: `https://api.github.com/search/repositories?q=${searchTerms}`,
+    type: "GET"
   })
   .done(renderSearchResults)
   .fail(displayError)
@@ -27,9 +28,11 @@ function renderSearchResults(data) {
 }
 
 function showCommits(e) {
-  fetch(`https://api.github.com/repos/${e.dataset.owner}/${e.dataset.repository}/commits`)
-    .then(parseJSON)
-    .then(renderCommits)
+  // fetch(`https://api.github.com/repos/${e.dataset.owner}/${e.dataset.repository}/commits`)
+  //   .then(parseJSON)
+  //   .then(renderCommits)
+
+  $.ajax()
 }
 
 function renderCommits(data) {
