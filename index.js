@@ -26,8 +26,8 @@ function renderSearchResults(data) {
   });
 }
 
-function showCommits(test) {
-  console.log(test.dataset);
+function showCommits(e) {
+  console.log(e.dataset);
 
 }
 
