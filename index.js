@@ -14,7 +14,7 @@ function displayError () {
 }
 
 function renderSearchResults(data) {
-
+  console.log("renderSearchResults", data)
 }
 
 function showCommits() {
