@@ -41,7 +41,6 @@ function showCommits(e) {
 }
 
 function renderCommits(data) {
-  // console.log(data);
   data.forEach(function(commit) {
     console.log(commit);
     $("#details").append(
@@ -60,11 +59,3 @@ function parseJSON(response) {
 
 $(document).ready(function (){
 });
-
-
-//
-// var renderCommits = (data) => {
-//   let result = data.map((commit)=>renderCommit(commit)).join('')
-//   return `<ul>${result}</ul>`
-// }
-//
