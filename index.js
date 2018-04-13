@@ -34,15 +34,18 @@ function showCommits(e) {
 
 function renderCommits(data) {
   data.forEach(function(commit) {
-    console.log(commit)
+    console.log(commit);
     $("#details").append(
       `<div>
-        <p>${commit}</p>
+        <p>${commit.author.login}</p>
+        <img src="$commit.author.avatar_url">
+        <p>${commit.sha}</p>
 
       </div>`
     )
   })
 }
+// SHA, the author, the author's login, and the author's avatar as an image.
 
 function parseJSON(response) {
   return response.json();
