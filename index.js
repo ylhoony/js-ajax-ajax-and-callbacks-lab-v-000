@@ -28,6 +28,7 @@ function renderSearchResults(data) {
 }
 
 function showCommits(e) {
+  // FETCH testing
   // fetch(`https://api.github.com/repos/${e.dataset.owner}/${e.dataset.repository}/commits`)
   //   .then(parseJSON)
   //   .then(renderCommits)
