@@ -38,7 +38,7 @@ function renderCommits(data) {
     $("#details").append(
       `<div>
         <p>${commit.author.login}</p>
-        <img src="$commit.author.avatar_url">
+        <img src="${commit.author.avatar_url}">
         <p>${commit.sha}</p>
 
       </div>`
