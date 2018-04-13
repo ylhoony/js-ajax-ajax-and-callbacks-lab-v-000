@@ -1,0 +1,74 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-04-13T01:59:21.530Z",
+    "end": "2018-04-13T01:59:22.199Z",
+    "duration": 669
+  },
+  "tests": [
+    {
+      "title": "has the right elements",
+      "fullTitle": "index.js index.html has the right elements",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "sets the errors div content",
+      "fullTitle": "index.js displayError sets the errors div content",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "calls out to the github search API and displays results",
+      "fullTitle": "index.js ajax functions searchRepositories calls out to the github search API and displays results",
+      "duration": 14,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "calls the github commits api and displays results",
+      "fullTitle": "index.js ajax functions showCommits calls the github commits api and displays results",
+      "duration": 6,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "has the right elements",
+      "fullTitle": "index.js index.html has the right elements",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "sets the errors div content",
+      "fullTitle": "index.js displayError sets the errors div content",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "calls out to the github search API and displays results",
+      "fullTitle": "index.js ajax functions searchRepositories calls out to the github search API and displays results",
+      "duration": 14,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "calls the github commits api and displays results",
+      "fullTitle": "index.js ajax functions showCommits calls the github commits api and displays results",
+      "duration": 6,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
