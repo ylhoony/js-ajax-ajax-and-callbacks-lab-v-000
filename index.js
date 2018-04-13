@@ -38,7 +38,8 @@ function renderCommits(data) {
 }
 
 function parseJSON(res) {
-  return JSON.parse(res);
+  console.log(res)
+  // return JSON.parse(res);
 }
 
 $(document).ready(function (){
