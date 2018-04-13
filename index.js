@@ -14,7 +14,7 @@ function displayError () {
 }
 
 function renderSearchResults(data) {
-  // console.log("renderSearchResults", data)
+  console.log("renderSearchResults", typeof data)
   const res = JSON.parse(data);
   const repos = res.items;
   repos.forEach(function(repo) {
