@@ -32,7 +32,12 @@ function showCommits(e) {
   //   .then(parseJSON)
   //   .then(renderCommits)
 
-  $.ajax()
+  $.ajax({
+    url: `https://api.github.com/repos/${e.dataset.owner}/${e.dataset.repository}/commits`,
+    type: "GET"
+  })
+  .done(renderCommits)
+  .fail(displayError)
 }
 
 function renderCommits(data) {
