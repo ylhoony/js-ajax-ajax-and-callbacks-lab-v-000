@@ -19,14 +19,14 @@ function renderSearchResults(data) {
   const repos = data.items;
   repos.forEach(function(repo) {
     // console.log(repo);
-    // $("results").append(
-    //   `<div>
-    //     <h2><a href="${repo.html_url}">${repo.name}</a></h2>
-    //     <p><a href="#" data-repository="${repo.name}" data-owner="${repo.owner.login}" onclick="showCommits(this)">Show Commits</a></p>
-    //     <p>${repo.description}</p>
-    //   </div>
-    //   <hr>`
-    // )
+    $("results").append(
+      `<div>
+        <h2><a href="${repo.html_url}">${repo.name}</a></h2>
+        <p><a href="#" data-repository="${repo.name}" data-owner="${repo.owner.login}" onclick="showCommits(this)">Show Commits</a></p>
+        <p>${repo.description}</p>
+      </div>
+      <hr>`
+    )
   });
 }
 
