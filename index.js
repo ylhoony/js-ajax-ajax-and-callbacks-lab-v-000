@@ -15,7 +15,7 @@ function displayError () {
 
 function renderSearchResults(data) {
   // console.log("renderSearchResults", data)
-  const repos = data.items;
+  const repos = JSON.parse(data).items;
   repos.forEach(function(repo) {
     // console.log(repo);
     $("results").append(
