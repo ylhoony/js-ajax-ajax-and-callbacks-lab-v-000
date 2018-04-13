@@ -5,8 +5,7 @@ function searchRepositories() {
     url: `https://api.github.com/search/repositories?q=${searchTerms}`
   }).done((data) => {
     // console.log(data);
-    // renderSearchResults(data);
-    // $('#results').html(renderSearchResults(data))
+    renderSearchResults(data);
   }).fail((error) => {
     displayError();
   })
