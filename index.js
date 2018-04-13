@@ -37,9 +37,9 @@ function renderCommits(data) {
   console.log("renderCommits:", data);
 }
 
-function parseJSON(res) {
-  console.log(res)
-  return res.json;
+function parseJSON(response) {
+  // console.log(res)
+  return response.json;
 }
 
 $(document).ready(function (){
