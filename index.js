@@ -31,8 +31,11 @@ function showCommits(e) {
 
   fetch(`https://api.github.com/repos/${e.dataset.owner}/${e.dataset.repository}/commits`)
     .then(parseJSON)
+    .then(renderCommits)
+}
 
-
+function renderCommits(data) {
+  console.log("renderCommits:", data)
 }
 
 function parseJSON(res) {
