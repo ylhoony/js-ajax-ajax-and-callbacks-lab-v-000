@@ -40,7 +40,6 @@ function renderCommits(data) {
         <p>${commit.author.login}</p>
         <img src="${commit.author.avatar_url}" style="height: 30px; width: 30px;">
         <p>${commit.sha}</p>
-
       </div>`
     )
   })
