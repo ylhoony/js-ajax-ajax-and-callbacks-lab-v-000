@@ -34,6 +34,7 @@ function showCommits(e) {
 
 function renderCommits(data) {
   data.forEach(function(commit) {
+    console.log(commit)
     $("#details").append(
       `<div>
         <p>${commit}</p>
