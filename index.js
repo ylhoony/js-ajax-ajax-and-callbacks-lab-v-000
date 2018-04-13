@@ -44,7 +44,6 @@ function renderCommits(data) {
     )
   })
 }
-// SHA, the author, the author's login, and the author's avatar as an image.
 
 function parseJSON(response) {
   return response.json();
