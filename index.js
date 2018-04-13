@@ -3,10 +3,8 @@ function searchRepositories() {
 
   $.ajax({
     url: `https://api.github.com/search/repositories?q=${searchTerms}`
-  }).done((data) => {
-    // console.log(data);
-    renderSearchResults(data);
-  }).fail((error) => {
+  }).done(renderSearchResults)
+    .fail((error) => {
     displayError();
   })
 }
