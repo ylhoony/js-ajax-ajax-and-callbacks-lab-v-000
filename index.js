@@ -37,6 +37,7 @@ function renderCommits(data) {
     $("#details").append(
       `<div>
         <p>${commit.sha}</p>
+
       </div>`
     )
   })
