@@ -34,7 +34,7 @@ function showCommits(e) {
 
 function renderCommits(data) {
   data.forEach(function(commit) {
-    $("#details").append(`<li>${commit.SHA}</li>`)
+    $("#details").append(`<li>${commit.sha}</li>`)
   })
 }
 
