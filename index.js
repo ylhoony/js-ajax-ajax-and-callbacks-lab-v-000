@@ -39,7 +39,7 @@ function renderCommits(data) {
 
 function parseJSON(res) {
   console.log(res)
-  // return JSON.parse(res);
+  return res.json;
 }
 
 $(document).ready(function (){
