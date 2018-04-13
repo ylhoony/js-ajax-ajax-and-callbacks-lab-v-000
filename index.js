@@ -17,7 +17,7 @@ function renderSearchResults(data) {
   // console.log("renderSearchResults", data)
   const repos = data.items;
   repos.forEach(function(repo) {
-    console.log(repo);
+    // console.log(repo);
     $("results").append(`
       <div>
         <h2><a href="${repo.html_url}">${repo.name}</a></h2>
