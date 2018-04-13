@@ -41,6 +41,7 @@ function showCommits(e) {
 }
 
 function renderCommits(data) {
+  console.log(data);
   data.forEach(function(commit) {
     console.log(commit);
     $("#details").append(
