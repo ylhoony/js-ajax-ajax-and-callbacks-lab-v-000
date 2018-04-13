@@ -15,6 +15,10 @@ function displayError () {
 
 function renderSearchResults(data) {
   console.log("renderSearchResults", data)
+  const repos = data.items;
+  repos.forEach(function(repo) {
+    console.log(element);
+  });
 }
 
 function showCommits() {
