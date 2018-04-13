@@ -29,6 +29,14 @@ function renderSearchResults(data) {
 function showCommits(e) {
   console.log(e.dataset);
 
+  fetch(`https://api.github.com/repos/${e.dataset.owner}/${e.dataset.repository}/commits`)
+    .then(parseJSON)
+
+
+}
+
+function parseJSON(res) {
+  return JSON.parse(res);
 }
 
 $(document).ready(function (){
